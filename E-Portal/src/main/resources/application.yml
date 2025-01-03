@@ -1,0 +1,40 @@
+server:
+  port: 9090
+  
+spring:
+  application:
+    name: EMS-WebMVC-App
+  
+  datasource:
+    password: shukla2698
+    url: jdbc:mysql://localhost:3306/EmployeeDB
+    username: root
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  
+  mail:
+    host: smtp.gmail.com
+    password: njau fthw ddju tjat
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: shuklashivanshu79@gmail.com
+
+    spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: Ov23liIccPE0KWtoyHbp
+            clientSecret: 4f1f02bcc4639a9f2ba4cf0ac1431bb39a64d4f5
